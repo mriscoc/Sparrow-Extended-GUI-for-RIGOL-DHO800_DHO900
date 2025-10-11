@@ -115,58 +115,60 @@
     .line 83
     invoke-interface {v1, v5}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
+# Force UPA item in the startmenu; MRISCOC
     .line 86
     :cond_1
-    invoke-static {}, Lcom/rigol/scope/utilities/ViewUtil;->checkModel()Z
+    # invoke-static {}, Lcom/rigol/scope/utilities/ViewUtil;->checkModel()Z
 
-    move-result v2
+    # move-result v2
 
-    if-eqz v2, :cond_2
+    # if-eqz v2, :cond_2
 
-    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    # invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    # move-result-object v2
 
-    check-cast v2, Lcom/rigol/scope/data/MappingObject;
+    # check-cast v2, Lcom/rigol/scope/data/MappingObject;
 
-    invoke-virtual {v2}, Lcom/rigol/scope/data/MappingObject;->getValue()I
+    # invoke-virtual {v2}, Lcom/rigol/scope/data/MappingObject;->getValue()I
 
-    move-result v2
+    # move-result v2
 
-    if-ne v2, v4, :cond_2
+    # if-ne v2, v4, :cond_2
 
-    .line 87
-    invoke-interface {v1, v5}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+    # .line 87
+    # invoke-interface {v1, v5}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 90
-    :cond_2
-    invoke-static {}, Lcom/rigol/scope/utilities/ViewUtil;->checkModelEDU()Z
+    # .line 90
+    # :cond_2
+    # invoke-static {}, Lcom/rigol/scope/utilities/ViewUtil;->checkModelEDU()Z
 
-    move-result v2
+    # move-result v2
 
-    if-eqz v2, :cond_3
+    # if-eqz v2, :cond_3
 
-    const/16 v2, 0xa
+    # const/16 v2, 0xa
 
-    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    # invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    # move-result-object v3
 
-    check-cast v3, Lcom/rigol/scope/data/MappingObject;
+    # check-cast v3, Lcom/rigol/scope/data/MappingObject;
 
-    invoke-virtual {v3}, Lcom/rigol/scope/data/MappingObject;->getValue()I
+    # invoke-virtual {v3}, Lcom/rigol/scope/data/MappingObject;->getValue()I
 
-    move-result v3
+    # move-result v3
 
-    const/16 v4, 0xe
+    # const/16 v4, 0xe
 
-    if-ne v3, v4, :cond_3
+    # if-ne v3, v4, :cond_3
 
-    .line 91
-    invoke-interface {v1, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+    # .line 91
+    # invoke-interface {v1, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 94
-    :cond_3
+    # .line 94
+    # :cond_3
+# ---------------------------------
     new-instance v2, Lcom/rigol/scope/views/startMenu/StartMenuPopupView$StartMenuItemDecoration;
 
     const/4 v3, 0x2
