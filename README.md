@@ -7,8 +7,8 @@ Sparrow Android GUI project for Rigol DHO800 and DHO900 series Oscilloscopes
 ## Extended GUI
 
 Latest version can be found at:  
-For **00.01.04** firmware: https://www.patreon.com/posts/141472182
-For **00.01.02** firmware: https://www.patreon.com/mriscoc/shop/rigol-dho800-900-sparrow-extended-gui-v0-204640  
+For **00.01.04** firmware: https://www.patreon.com/posts/141472182  
+For **00.01.02** firmware: https://www.patreon.com/mriscoc/shop/rigol-dho800-900-sparrow-extended-gui-v0-204640    
 
 Screeshot of version 0.6.2:
 
