@@ -10,10 +10,9 @@ Latest version can be found at:
 For **00.01.04** firmware: https://www.patreon.com/posts/141472182  
 For **00.01.02** firmware: https://www.patreon.com/mriscoc/shop/rigol-dho800-900-sparrow-extended-gui-v0-204640    
 
-Screeshot of version 0.6.2:
+Screeshot of version 0.7.1:
 
-![Sparrow_Extended_v0 6 2b](https://github.com/user-attachments/assets/0c9c2f0e-f1a2-4f18-9756-7db6167a35c7)
-
+![Sparrow_Extended_v0 7 1](https://github.com/user-attachments/assets/ba0dd531-b2ab-4f03-9d15-3c6e5d58f9af)
   
 https://github.com/mriscoc/RIGOL_DHO800_DHO900_GUI/assets/2745567/0a0c265d-227d-4bdb-8d57-0fc6eb009ae3
 
