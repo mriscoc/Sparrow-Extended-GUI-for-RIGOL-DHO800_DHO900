@@ -1,4 +1,4 @@
-# RIGOL_DHO800_DHO900_GUI
+# Sparrow Extended GUI for the RIGOL DHO800 DHO900 Oscilloscopes
 Sparrow Android GUI project for Rigol DHO800 and DHO900 series Oscilloscopes
 
 > [!NOTE]
