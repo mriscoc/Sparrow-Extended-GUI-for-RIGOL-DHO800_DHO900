@@ -16,6 +16,10 @@ Screeshot of version 0.7.1:
   
 https://github.com/mriscoc/RIGOL_DHO800_DHO900_GUI/assets/2745567/0a0c265d-227d-4bdb-8d57-0fc6eb009ae3
 
+![Sparrow_Extended_v0 7 1_fullscreen](https://github.com/user-attachments/assets/cb4c6276-d328-41e7-826f-6bc0315a32db)
+
+![DHO804_PyVISA](https://github.com/user-attachments/assets/fc0a5206-0fbf-4e06-858b-c6ce302a6ba5)
+
 Telegram DHO800/900 channel: https://t.me/S2084K/2
 
 ### Installing Sparrow Extended manually
