@@ -14,8 +14,6 @@ Screeshot of version 0.7.1:
 
 ![Sparrow_Extended_v0 7 1](https://github.com/user-attachments/assets/ba0dd531-b2ab-4f03-9d15-3c6e5d58f9af)
   
-https://github.com/mriscoc/RIGOL_DHO800_DHO900_GUI/assets/2745567/0a0c265d-227d-4bdb-8d57-0fc6eb009ae3
-
 ![Sparrow_Extended_v0 7 1_fullscreen](https://github.com/user-attachments/assets/cb4c6276-d328-41e7-826f-6bc0315a32db)
 
 ![DHO804_PyVISA](https://github.com/user-attachments/assets/fc0a5206-0fbf-4e06-858b-c6ce302a6ba5)
