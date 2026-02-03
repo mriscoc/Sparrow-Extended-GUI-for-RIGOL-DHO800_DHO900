@@ -53,6 +53,10 @@ Features of verion 0.7.1:
 ## DHO 8x2 with full features without ghost channels
 ![DHO802_about](https://github.com/user-attachments/assets/ffa26d4c-512e-42e3-8a4d-c1efe1e83c4e)
 
+## Using the DHOVisor and the DHOTools
+<img width="2092" height="788" alt="image" src="https://github.com/user-attachments/assets/ca56f111-e94a-4268-9f8c-cf1a05081546" />
+
+
 Telegram DHO800/900 channel: https://t.me/S2084K/2
 
 ### Installing Sparrow Extended manually
