@@ -1,16 +1,10 @@
-# Sparrow Extended GUI for the RIGOL DHO800 DHO900 Oscilloscopes
-Sparrow Android GUI project for Rigol DHO800 and DHO900 series Oscilloscopes
+# Sparrow Extended UI for the RIGOL DHO800 DHO900 series oscilloscopes
 
-This the official repository for the proyect Sparrow Extended UI. This proyect was started 
-
-This project began by gathering ideas and contributions from the community of users of Rigol DHO800 and DHO900 series oscilloscopes, mainly on the [Eevblog forum](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope). Other projects to customize the original interface were started later. If you visit that forum, you can find a historical compilation of the ideas implemented in this modification. In early 2024, the first layout changes of the measurement panel and a little reorganization of the UI elements were presented in the forum, and the [first public release](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5470243/#msg5470243) was presented, as well as the first demonstration of the [full screen mode](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471431/#msg5471431). A new [header bar](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471554/#msg5471554) was shown in April 2024 and released in the Github repository. Finally, a video showing the modifications made up to May 2024 [was published on YouTube](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5504275/#msg5504275). Many more modifications have been made over time. At the end of 2025, Rigol launched the MHO900 series of oscilloscopes, applying many of the ideas from this project to the user interface of these instruments.
+This the official repository for the proyect Sparrow Extended UI. This project began by gathering ideas and contributions from the community of users of Rigol DHO800 and DHO900 series oscilloscopes, mainly on the [Eevblog forum](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope). Other projects to customize the original interface were started later. If you visit that forum, you can find a historical compilation of the ideas implemented in this modification. In early 2024, the first layout changes of the measurement panel and a little reorganization of the UI elements were presented in the forum, and the [first public release](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5470243/#msg5470243) was presented, as well as the first demonstration of the [full screen mode](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471431/#msg5471431). A new [header bar](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471554/#msg5471554) was shown in April 2024 and released in the Github repository. Finally, a video showing the modifications made up to May 2024 [was published on YouTube](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5504275/#msg5504275). Many more modifications have been made over time. At the end of 2025, Rigol launched the MHO900 series of oscilloscopes, applying many of the ideas from this project to the user interface of these instruments.
 
 ⚠️ Over time, other customization projects appeared with similar names, which has caused confusion. This document refers exclusively to this **ORIGINAL Sparrow Extended** project.
 
-> [!NOTE]
-> DHO Actions must be started after the Oscilloscope application is loaded to be able to connect to it, if the Oscilloscope application closes and restarts, you must force a reconnect by pressing and holding the close icon [X] in the upper right corner of the DHO Actions screen and start it from the DHO Sparrow application.
-
-## Extended GUI
+## Sparrow Extended UI
 
 Latest version can be found at:  
 For **00.01.04** firmware: https://www.patreon.com/posts/141472182  
@@ -40,6 +34,9 @@ Features of verion 0.7.1:
 - Code enhancements, removed extra logging for better general performance
 - Fixes for bugs reported by the community
 - Normal and System versions
+
+> [!NOTE]
+> DHO Actions must be started after the Oscilloscope application is loaded to be able to connect to it, if the Oscilloscope application closes and restarts, you must force a reconnect by pressing and holding the close icon [X] in the upper right corner of the DHO Actions screen and start it from the DHO Sparrow application.
 
 ## Screeshot of version 0.7.1:
 ![Sparrow_Extended_v0 7 1](https://github.com/user-attachments/assets/ba0dd531-b2ab-4f03-9d15-3c6e5d58f9af)
