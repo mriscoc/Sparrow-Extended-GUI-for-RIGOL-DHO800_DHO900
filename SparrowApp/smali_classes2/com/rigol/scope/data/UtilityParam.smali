@@ -360,7 +360,7 @@
     .line 393
     iput-object v0, p0, Lcom/rigol/scope/data/UtilityParam;->hardVersion:Ljava/lang/String;
 
-    const-string v0, "2026/04/23 18:26:12"
+    const-string v0, "2026/07/15 MRiscoC Extended DEMO"
 
     .line 404
     iput-object v0, p0, Lcom/rigol/scope/data/UtilityParam;->miscBuild:Ljava/lang/String;

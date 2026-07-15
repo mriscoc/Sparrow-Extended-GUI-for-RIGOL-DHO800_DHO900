@@ -30,9 +30,14 @@
 
 .field public final waveform:Landroidx/fragment/app/FragmentContainerView;
 
+# Add fullScreenIcon object; MRISCOC
+.field public final fullScreenIcon:Landroid/widget/ImageView;
+#---------------------------
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroidx/fragment/app/FragmentContainerView;)V
+# Add fullScreenIcon object; MRISCOC
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;)V
+#---------------------------
     .locals 0
 
     .line 56
@@ -61,6 +66,10 @@
 
     .line 64
     iput-object p11, p0, Lcom/rigol/scope/databinding/ActivityMainBinding;->waveform:Landroidx/fragment/app/FragmentContainerView;
+
+# Add fullScreenIcon object; MRISCOC
+    iput-object p12, p0, Lcom/rigol/scope/databinding/ActivityMainBinding;->fullScreenIcon:Landroid/widget/ImageView;
+#---------------------------
 
     return-void
 .end method
