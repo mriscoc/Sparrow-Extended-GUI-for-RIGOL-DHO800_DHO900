@@ -1,33 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_navigation_bar_0" android:layout_width="fill_parent" android:layout_height="50.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/navigation_bar_layout" android:background="?custom_attr_item_bg" android:layout_width="820.0dip" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/module_spacing" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:skin_tag="background:custom_attr_item_bg">
-        <ImageView android:id="@id/logo" android:layout_width="101.0dip" android:layout_height="30.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:src="@drawable/ic_logo" android:adjustViewBounds="true" android:layout_marginStart="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/status" android:background="@drawable/ic_state_bg" android:layout_width="70.0dip" android:layout_height="47.0dip" android:layout_marginStart="@dimen/item_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/logo" app:layout_constraintTop_toTopOf="parent" />
-        <Button android:textSize="23.0sp" android:textColor="@color/dark_orange" android:id="@id/horizontal_scale_btn" android:tag="binding_1" android:background="@drawable/bg_circular" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:text="@string/horizontal_scale_btn_str" android:layout_marginStart="@dimen/item_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintStart_toEndOf="@id/status" app:layout_constraintTop_toTopOf="parent" />
-        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/horizontal_scale_info" android:tag="binding_2" android:background="@drawable/bg_horizontal_scale1" android:layout_width="85.0dip" android:layout_height="45.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:paddingStart="16.0dip" android:paddingEnd="0.0dip" android:layout_marginStart="-10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/horizontal_scale_btn" app:layout_constraintTop_toTopOf="parent" />
-        <Button android:textSize="23.0sp" android:textColor="@color/dark_orange" android:id="@id/acquire_btn" android:tag="binding_3" android:background="@drawable/bg_circular" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:text="@string/acquire_btn_str" android:layout_marginStart="@dimen/item_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintStart_toEndOf="@id/horizontal_scale_info" app:layout_constraintTop_toTopOf="parent" />
-        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/acquire_info" android:tag="binding_4" android:background="@drawable/bg_acquire_info1" android:layout_width="183.0dip" android:layout_height="45.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:layout_marginStart="-10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/acquire_btn" app:layout_constraintTop_toTopOf="parent">
-            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginStart="15.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="10GSa/s" android:layout_marginStart="15.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_marginStart="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
-            <TextView android:textSize="14.0sp" android:textColor="@color/light_gray" android:gravity="center" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-            <TextView android:textSize="14.0sp" android:textColor="@color/gray_regent" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <Button android:textSize="28.0sp" android:textColor="@color/dark_orange" android:id="@id/horizontal_offset_btn" android:tag="binding_10" android:background="@drawable/bg_circular" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:text="@string/horizontal_position_btn_str" android:layout_marginStart="@dimen/item_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintStart_toEndOf="@id/acquire_info" app:layout_constraintTop_toTopOf="parent" />
-        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/horizontal_offset_info" android:tag="binding_11" android:background="@drawable/bg_horizontal_scale1" android:layout_width="85.0dip" android:layout_height="45.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:paddingStart="16.0dip" android:paddingEnd="0.0dip" android:layout_marginStart="-10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/horizontal_offset_btn" app:layout_constraintTop_toTopOf="parent" />
-        <Button android:textSize="28.0sp" android:textColor="@color/dark_orange" android:id="@id/trigger_btn" android:tag="binding_12" android:background="@drawable/bg_circular" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:text="@string/trigger_btn_str" android:layout_marginStart="@dimen/item_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintStart_toEndOf="@id/horizontal_offset_info" app:layout_constraintTop_toTopOf="parent" />
-        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/trigger_info" android:tag="binding_13" android:background="@drawable/bg_trigger1" android:layout_width="142.0dip" android:layout_height="45.0dip" android:foreground="?android:selectableItemBackgroundBorderless" android:layout_marginStart="-10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/trigger_btn" app:layout_constraintTop_toTopOf="parent">
-            <TextView android:textSize="11.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/appCompatTextView2" android:tag="binding_14" android:paddingBottom="2.0dip" android:layout_width="20.0dip" android:layout_height="17.0dip" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-            <ImageView android:id="@id/imageView2" android:tag="binding_15" android:layout_width="16.0dip" android:layout_height="19.0dip" android:layout_marginStart="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/appCompatTextView2" app:layout_constraintTop_toTopOf="parent" />
-            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/appCompatTextView3" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/appCompatTextView4" app:layout_constraintStart_toEndOf="@id/imageView2" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" />
-            <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:id="@id/appCompatTextView4" android:tag="binding_17" android:layout_width="14.0dip" android:layout_height="wrap_content" android:layout_marginEnd="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+  android:tag="layout/fragment_navigation_bar_0"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/navigation_bar_layout"
+    android:background="?custom_attr_item_bg"
+    app:skin_tag="background:custom_attr_item_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/module_spacing"
+    android:padding="3.0dip"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <ImageView android:id="@id/logo"
+      android:visibility="gone"
+      android:layout_width="60.0dip"
+      android:layout_height="30.0dip"
+      android:layout_marginTop="11.0dip"
+      android:layout_marginBottom="11.0dip"
+      android:src="@drawable/ic_logo"
+      android:layout_marginStart="0.0dip"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/status"
+      android:textSize="25.0sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:background="@drawable/ic_state_bg"
+      android:layout_width="80.0dip"
+      android:layout_height="match_parent"
+      app:layout_constraintStart_toEndOf="@id/logo" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/acquire_info"
+      android:tag="binding_4"
+      android:background="@drawable/sel_rectangle_dark"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:foreground="?android:selectableItemBackgroundBorderless"
+      android:layout_marginStart="2.0dip"
+      app:layout_constraintStart_toEndOf="@id/status"
+      android:padding="3.0dip">
+      <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/acquire_info_a"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <Button android:id="@id/horizontal_scale_btn"
+          android:text="@string/horizontal_scale_btn_str"
+          android:textSize="25.0sp"
+          android:textColor="@color/dark_orange"
+          android:tag="binding_1"
+          android:layout_width="25.0dip"
+          android:layout_height="match_parent"
+          android:background="@android:color/transparent"
+          app:layout_constraintStart_toStartOf="parent" />
+        <Button android:id="@id/horizontal_offset_btn"
+          android:visibility="gone"
+          android:text="@string/horizontal_position_btn_str"
+          android:textSize="25.0sp"
+          android:textColor="@color/dark_orange"
+          android:tag="binding_10"
+          android:layout_width="20.0dip"
+          android:layout_height="match_parent"
+          android:background="@android:color/transparent"
+          app:layout_constraintStart_toEndOf="@id/acquire_info"/>
+        <TextView android:id="@id/horizontal_scale_info"
+          android:tag="binding_2"
+          android:textSize="15.0sp"
+          android:textColor="@android:color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toEndOf="@id/horizontal_scale_btn"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/horizontal_offset_info"
+          android:tag="binding_11"
+          android:textSize="15.0sp"
+          android:textColor="@android:color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toEndOf="@id/horizontal_scale_btn"
+          app:layout_constraintBottom_toBottomOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/acquire_info_b"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/acquire_info_a">
+        <Button android:id="@id/acquire_btn"
+          android:text="@string/acquire_btn_str"
+          android:textSize="25.0sp"
+          android:textColor="@color/dark_orange"
+          android:tag="binding_3"
+          android:layout_width="20.0dip"
+          android:layout_height="match_parent"
+          android:background="@android:color/transparent"
+          app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+          android:textSize="15.0sp"
+          android:textColor="@android:color/white"
+          android:tag="binding_5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toEndOf="@id/acquire_btn"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+          android:textSize="15.0sp"
+          android:textColor="@android:color/white"
+          android:text="10GSa/s"
+          android:tag="binding_6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="@id/acquire_btn"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+          android:textSize="15.0sp"
+          android:textColor="@android:color/white"
+          android:tag="binding_7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toEndOf="@id/acquire_btn"
+          app:layout_constraintBottom_toBottomOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/acquire_info_c"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/acquire_info_b"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="@dimen/module_spacing">
+        <TextView
+          android:textSize="15.0sp"
+          android:textColor="@color/light_gray"
+          android:tag="binding_8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+          android:textSize="15.0sp"
+          android:textColor="@color/light_gray"
+          android:tag="binding_9"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/function_list" android:background="?custom_attr_item_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_marginStart="@dimen/module_spacing" android:layout_marginEnd="@dimen/module_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/app_switch_layout" app:layout_constraintStart_toEndOf="@id/navigation_bar_layout" app:layout_constraintTop_toTopOf="parent" app:skin_tag="background:custom_attr_item_bg" style="@style/App.RecyclerView.Linear" />
-    <ImageView android:id="@id/function_list_left_arrow" android:layout_width="10.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left3" android:layout_marginStart="3.0dip" app:layout_constraintBottom_toBottomOf="@id/function_list" app:layout_constraintStart_toStartOf="@id/function_list" app:layout_constraintTop_toTopOf="@id/function_list" app:tint="@color/white" />
-    <ImageView android:id="@id/function_list_right_arrow" android:layout_width="10.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right3" android:layout_marginEnd="3.0dip" app:layout_constraintBottom_toBottomOf="@id/function_list" app:layout_constraintEnd_toEndOf="@id/function_list" app:layout_constraintTop_toTopOf="@id/function_list" app:tint="@color/white" />
-    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/app_switch_layout" android:background="?custom_attr_item_bg" android:visibility="gone" android:layout_width="95.0dip" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/module_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:skin_tag="background:custom_attr_item_bg">
-        <ImageButton android:id="@id/app_switch" android:layout_width="85.0dip" android:layout_height="@dimen/quick_icon_height" android:src="@drawable/ic_app_switch" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/App.ImageButton.Gray" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/trigger_info"
+      android:tag="binding_13"
+      android:background="@drawable/sel_rectangle_dark"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:foreground="?android:selectableItemBackgroundBorderless"
+      android:layout_marginStart="2.0dip"
+      app:layout_constraintStart_toEndOf="@id/acquire_info"
+      android:padding="3.0dip">
+      <Button android:id="@id/trigger_btn"
+        android:text="@string/trigger_btn_str"
+        android:textSize="25.0sp"
+        android:textColor="@color/dark_orange"
+        android:tag="binding_12"
+        android:layout_width="25.0dip"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent" />
+      <ImageView android:id="@id/imageView2"
+        android:tag="binding_15"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_marginStart="-4.0dip"
+        android:layout_marginTop="9.0dip"
+        app:layout_constraintStart_toEndOf="@id/trigger_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+      <TextView android:id="@id/appCompatTextView2"
+        android:textSize="13.0sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:tag="binding_14"
+        android:paddingBottom="2.0dip"
+        android:layout_width="18.0dip"
+        android:layout_height="18.0dip"
+        android:paddingStart="1.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginLeft="5.0dip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView2" />
+      <TextView android:id="@id/appCompatTextView3"
+        android:textSize="15.0sp"
+        android:textColor="@android:color/white"
+        android:tag="binding_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/appCompatTextView2"
+        android:paddingRight="@dimen/module_spacing" />
+      <TextView android:id="@id/appCompatTextView4"
+        android:textSize="15.0sp"
+        android:textColor="@android:color/holo_green_light"
+        android:tag="binding_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5.0dip"
+        app:layout_constraintStart_toEndOf="@id/appCompatTextView2"
+        app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="0.0dip"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toStartOf="@id/app_switch_layout"
+    app:layout_constraintStart_toEndOf="@id/navigation_bar_layout"
+    app:layout_constraintTop_toTopOf="parent" >
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/function_list"
+      android:orientation="horizontal"
+      android:background="?custom_attr_item_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingStart="16.0dip"
+      android:paddingEnd="16.0dip"
+      app:skin_tag="background:custom_attr_item_bg"
+      style="@style/App.RecyclerView.Linear" />
+    <ImageView android:id="@id/function_list_left_arrow"
+      android:layout_width="10.0dip"
+      android:layout_height="match_parent"
+      android:src="@drawable/ic_arrow_left3"
+      android:layout_marginStart="3.0dip"
+      app:layout_constraintStart_toStartOf="@id/function_list"
+      app:tint="@color/white" />
+    <ImageView android:id="@id/function_list_right_arrow"
+      android:layout_width="10.0dip"
+      android:layout_height="match_parent"
+      android:src="@drawable/ic_arrow_right3"
+      android:layout_marginEnd="3.0dip"
+      app:layout_constraintEnd_toEndOf="@id/function_list"
+      app:tint="@color/white" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/app_switch_layout"
+    android:visibility="gone"
+    android:background="?custom_attr_item_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/module_spacing"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:skin_tag="background:custom_attr_item_bg"
+    android:paddingRight="2.0dip">
+    <ImageButton android:id="@id/app_switch"
+      android:layout_width="85.0dip"
+      android:layout_height="@dimen/quick_icon_height"
+      android:src="@drawable/ic_app_switch"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      style="@style/App.ImageButton.Gray" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
