@@ -1,13 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main_layout" android:tag="layout/activity_main_0" android:background="?custom_attr_app_bg" android:padding="@dimen/region_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAutofill="no" app:skin_tag="background:custom_attr_app_bg"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.fragment.app.FragmentContainerView android:name="com.rigol.scope.NavigationBarFragment" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/main_top_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <androidx.fragment.app.FragmentContainerView android:name="com.rigol.scope.SettingsBarFragment" android:id="@id/settings_bar" android:layout_width="fill_parent" android:layout_height="75.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
-    <androidx.fragment.app.FragmentContainerView android:name="com.rigol.scope.WaveformFragment" android:id="@id/waveform" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="@dimen/region_spacing" android:layout_marginRight="2.0dip" android:layout_marginBottom="@dimen/region_spacing" app:layout_constraintBottom_toTopOf="@id/settings_bar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/navigation_bar" />
-    <ImageView android:id="@id/results_bar_icon" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_marginEnd="15.0dip" app:layout_constraintBottom_toBottomOf="@id/waveform" app:layout_constraintEnd_toStartOf="@id/results_bar" />
-    <androidx.fragment.app.FragmentContainerView android:name="com.rigol.scope.ResultsBarFragment" android:id="@id/results_bar" android:tag="binding_2" android:layout_width="150.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/region_spacing" android:layout_marginBottom="@dimen/region_spacing" android:alpha="0.9" android:layout_marginStart="@dimen/region_spacing" app:layout_constraintBottom_toTopOf="@id/settings_bar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/navigation_bar" />
-    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:tag="binding_3" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:id="@id/image_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <ImageView android:id="@id/progress" android:tag="binding_4" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="40.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image_logo" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+  android:id="@id/main_layout"
+  android:tag="layout/activity_main_0"
+  android:background="?custom_attr_app_bg"
+  android:padding="@dimen/region_spacing"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:importantForAutofill="no"
+  app:skin_tag="background:custom_attr_app_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.fragment.app.FragmentContainerView
+    android:name="com.rigol.scope.NavigationBarFragment"
+    android:id="@id/navigation_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/main_top_height"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  <androidx.fragment.app.FragmentContainerView
+    android:name="com.rigol.scope.SettingsBarFragment"
+    android:id="@id/settings_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="75.0dip"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+  <androidx.fragment.app.FragmentContainerView
+    android:name="com.rigol.scope.WaveformFragment"
+    android:id="@id/waveform"
+    android:layout_width="0.0dip"
+    android:layout_height="0.0dip"
+    android:layout_marginLeft="2.0dip"
+    android:layout_marginTop="@dimen/region_spacing"
+    android:layout_marginRight="2.0dip"
+    android:layout_marginBottom="@dimen/region_spacing"
+    app:layout_constraintBottom_toTopOf="@id/settings_bar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/navigation_bar" />
+  <ImageView android:id="@+id/fullscreen_icon"
+      android:tag="binding_9"
+      android:layout_width="30.0dip"
+      android:layout_height="30.0dip"
+      android:layout_marginTop="35.0dip"
+      android:src="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+      android:layout_marginStart="10.0dip"
+      app:layout_constraintStart_toStartOf="@id/waveform"
+      app:layout_constraintTop_toTopOf="@id/waveform" />
+  <ImageView
+    android:id="@id/results_bar_icon"
+    android:tag="binding_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15.0dip"
+    android:layout_marginEnd="15.0dip"
+    app:layout_constraintBottom_toBottomOf="@id/waveform"
+    app:layout_constraintEnd_toStartOf="@id/results_bar" />
+  <androidx.fragment.app.FragmentContainerView
+    android:name="com.rigol.scope.ResultsBarFragment"
+    android:id="@id/results_bar"
+    android:tag="binding_2"
+    android:layout_width="150.0dip"
+    android:layout_height="0.0dip"
+    android:layout_marginTop="@dimen/region_spacing"
+    android:layout_marginBottom="@dimen/region_spacing"
+    android:alpha="0.9"
+    android:layout_marginStart="@dimen/region_spacing"
+    app:layout_constraintBottom_toTopOf="@id/settings_bar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/navigation_bar" />
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:gravity="center"
+    android:tag="binding_3"
+    android:background="@color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+      android:id="@id/image_logo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/logo"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+      android:id="@id/progress"
+      android:tag="binding_4"
+      android:layout_width="50.0dip"
+      android:layout_height="50.0dip"
+      android:layout_marginTop="40.0dip"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/image_logo" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
