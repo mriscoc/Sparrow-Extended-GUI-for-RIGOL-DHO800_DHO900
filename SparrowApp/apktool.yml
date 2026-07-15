@@ -1,6 +1,5 @@
-version: 2.9.3
-apkFileName: Sparrow_orig_00.01.04.apk
-isFrameworkApk: false
+version: 2.12.1
+apkFileName: SparrowEXT_00.01.04.apk
 usesFramework:
   ids:
   - 1
