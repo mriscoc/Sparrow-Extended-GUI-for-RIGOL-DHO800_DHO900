@@ -216,7 +216,7 @@
 # Add fullScreenIcon object; MRISCOC
     iget-object v0, v12, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->fullScreenIcon:Landroid/widget/ImageView;
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
-    move-object/from16 v0, p2   # move from higger to lower register MRISCOC
+    move-object/from16 v0, p2   # move from higher to lower register MRISCOC
     invoke-virtual {p0, v0}, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->setRootTag(Landroid/view/View;)V # Just use a lower register MRISCOC
 #---------------------------
 
