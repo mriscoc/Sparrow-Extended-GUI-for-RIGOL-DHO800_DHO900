@@ -1342,7 +1342,16 @@
     iget-object v1, p1, Lcom/rigol/scope/databinding/ActivityMainBinding;->settingsBar:Landroidx/fragment/app/FragmentContainerView;
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentContainerView;->getVisibility()I
     move-result v3
-    xor-int/lit8 v3, v3, 0x9  # Toggle visibility in v3
+
+    if-nez v3, :fs_make_visible
+
+    const/16 v3, 0x8
+    goto :fs_apply
+
+:fs_make_visible
+    const/4 v3, 0x0
+
+:fs_apply
     invoke-virtual {v0, v3}, Landroidx/fragment/app/FragmentContainerView;->setVisibility(I)V
     invoke-virtual {v1, v3}, Landroidx/fragment/app/FragmentContainerView;->setVisibility(I)V
     return-void
