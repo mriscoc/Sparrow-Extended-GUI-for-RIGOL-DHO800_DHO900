@@ -2166,11 +2166,11 @@
     if-eqz v4, :cond_3
 
     .line 612
-    new-instance v4, Landroid/content/Intent;
-
-    invoke-direct {v4, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, v4}, Lcom/rigol/scope/MainActivity;->sendBroadcast(Landroid/content/Intent;)V
+    # Protected broadcast ACTION_MEDIA_MOUNTED may not be sent from app UID 10032.
+    # The following sendBroadcast call is removed to prevent rejection.
+    # new-instance v4, Landroid/content/Intent;
+    # invoke-direct {v4, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    # invoke-virtual {v1, v4}, Lcom/rigol/scope/MainActivity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 615
     :cond_3
