@@ -1334,6 +1334,30 @@
     return-void
 .end method
 
+# Add fullScreenIcon object; Toggle visibility of navigationBar and settingsBar; MRISCOC
+.method public fullScreen(Landroid/view/View;)V
+    .locals 4
+    iget-object p1, p0, Lcom/rigol/scope/MainActivity;->binding:Lcom/rigol/scope/databinding/ActivityMainBinding;
+    iget-object v0, p1, Lcom/rigol/scope/databinding/ActivityMainBinding;->navigationBar:Landroidx/fragment/app/FragmentContainerView;
+    iget-object v1, p1, Lcom/rigol/scope/databinding/ActivityMainBinding;->settingsBar:Landroidx/fragment/app/FragmentContainerView;
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentContainerView;->getVisibility()I
+    move-result v3
+
+    if-nez v3, :fs_make_visible
+
+    const/16 v3, 0x8
+    goto :fs_apply
+
+:fs_make_visible
+    const/4 v3, 0x0
+
+:fs_apply
+    invoke-virtual {v0, v3}, Landroidx/fragment/app/FragmentContainerView;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroidx/fragment/app/FragmentContainerView;->setVisibility(I)V
+    return-void
+.end method
+#---------------------------
+
 .method public locked(Z)V
     .locals 1
 
@@ -2055,6 +2079,14 @@
     invoke-direct {v3, v1}, Lcom/rigol/scope/-$$Lambda$MainActivity$rkhiAE_RKL1N1grFc_z8yPqOpXY;-><init>(Lcom/rigol/scope/MainActivity;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+# fullScreen OnClick; MRISCOC
+    iget-object v0, v1, Lcom/rigol/scope/MainActivity;->binding:Lcom/rigol/scope/databinding/ActivityMainBinding;
+    iget-object v0, v0, Lcom/rigol/scope/databinding/ActivityMainBinding;->fullScreenIcon:Landroid/widget/ImageView;
+    new-instance v3, Lcom/rigol/scope/-$$Lambda$MainActivity$fullScreenOnClick;
+    invoke-direct {v3, v1}, Lcom/rigol/scope/-$$Lambda$MainActivity$fullScreenOnClick;-><init>(Lcom/rigol/scope/MainActivity;)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+#---------------------------------
 
     .line 596
     new-instance v0, Landroid/content/IntentFilter;

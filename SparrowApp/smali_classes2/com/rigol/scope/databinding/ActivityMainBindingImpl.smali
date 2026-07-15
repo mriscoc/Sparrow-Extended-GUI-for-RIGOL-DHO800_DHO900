@@ -71,7 +71,9 @@
 
     sget-object v1, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const/16 v2, 0x9
+# Add fullScreenIcon object; MRISCOC
+    const/16 v2, 0xa
+#---------------------------
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->mapBindings(Landroidx/databinding/DataBindingComponent;Landroid/view/View;ILandroidx/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -83,9 +85,10 @@
 .end method
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
-    .locals 13
-
-    move-object v12, p0
+# Add fullScreenIcon object; MRISCOC
+    .locals 14
+    # move-object v12, p0
+#---------------------------
 
     const/16 v0, 0x8
 
@@ -136,6 +139,13 @@
 
     check-cast v9, Landroid/widget/ImageView;
 
+# Add fullScreenIcon object; MRISCOC
+    const/16 v0, 0x9 # binding_9 Fullscreen_icon
+    aget-object v0, p3, v0
+    move-object v12, v0
+    check-cast v12, Landroid/widget/ImageView;
+#---------------------------
+
     const/4 v0, 0x6
 
     aget-object v0, p3, v0
@@ -158,9 +168,11 @@
 
     move-object v1, p1
 
-    move-object v2, p2
-
-    invoke-direct/range {v0 .. v11}, Lcom/rigol/scope/databinding/ActivityMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroidx/fragment/app/FragmentContainerView;)V
+# Add fullScreenIcon object; MRISCOC
+    move-object/from16 v2, p2   # move from higher register MRISCOC
+    invoke-direct/range {v0 .. v12}, Lcom/rigol/scope/databinding/ActivityMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;)V
+    move-object v12, p0 # restore original use of v12 ; MRISCOC
+#---------------------------
 
     const-wide/16 v0, -0x1
 
@@ -201,10 +213,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    move-object v0, p2
-
-    .line 50
-    invoke-virtual {p0, p2}, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->setRootTag(Landroid/view/View;)V
+# Add fullScreenIcon object; MRISCOC
+    iget-object v0, v12, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->fullScreenIcon:Landroid/widget/ImageView;
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+    move-object/from16 v0, p2   # move from higher to lower register MRISCOC
+    invoke-virtual {p0, v0}, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->setRootTag(Landroid/view/View;)V # Just use a lower register MRISCOC
+#---------------------------
 
     .line 52
     invoke-virtual {p0}, Lcom/rigol/scope/databinding/ActivityMainBindingImpl;->invalidateAll()V
