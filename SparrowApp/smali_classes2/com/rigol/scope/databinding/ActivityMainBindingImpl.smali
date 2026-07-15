@@ -169,7 +169,7 @@
     move-object v1, p1
 
 # Add fullScreenIcon object; MRISCOC
-    move-object/from16 v2, p2   # move from higger register MRISCOC
+    move-object/from16 v2, p2   # move from higher register MRISCOC
     invoke-direct/range {v0 .. v12}, Lcom/rigol/scope/databinding/ActivityMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;Landroidx/fragment/app/FragmentContainerView;Landroidx/fragment/app/FragmentContainerView;Landroid/widget/ImageView;)V
     move-object v12, p0 # restore original use of v12 ; MRISCOC
 #---------------------------
